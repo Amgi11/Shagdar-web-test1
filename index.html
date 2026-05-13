@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amgalan Shagdar - Web Test</title>
+</head>
+<body style="background-color: lightblue;">
 
+    <h1>Amgalan Shagdar – 3AHITM</h1>
+
+    <h2>Persönliche Daten</h2>
+
+    <p>
+        Geburtsdatum: 20.01.2010<br>
+        Lieblingsfarbe: Lila
+    </p>
+
+    <h2>Meine Lieblingsfächer</h2>
+
+    <ol>
+        <li>Mathematik</li>
+        <li>Latein</li>
+        <li>Englisch</li>
+    </ol>
+
+    <h2>Meine Hobbys</h2>
+
+    <ul id="liste-hobbys"></ul>
+
+    <script>
+      const hobbys = ["Gaming", "Boxen", "Musik hören", "Amgalan Shagdar"];
+
+      const liste = document.getElementById("liste-hobbys");
+
+      hobbys.forEach(h => {
+        let li = document.createElement("li");
+        li.textContent = h;
+        liste.appendChild(li);
+      });
+    </script>
+
+    <h2>Freies Bild</h2>
+
+    <figure>
+        <img
+            src="img/bild1.jpg"
+            alt="Löwe"
+            title="Freies Bild"
+            width="400"
+        >
+
+        <figcaption>
+            Foto von
+            <a href="https://static.freundin.de/3000x2250/focal_975x770:976x771/images/2024-05/sternzeichen-loewe-charakter-gettyimages-1499195564.jpg" target="_blank">
+                Amgalan Shagdar
+            </a>
+            – Titel:
+            <a href="https://static.freundin.de/3000x2250/focal_975x770:976x771/images/2024-05/sternzeichen-loewe-charakter-gettyimages-1499195564.jpg" target="_blank">
+                Lion
+</html>
